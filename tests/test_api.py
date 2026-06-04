@@ -17,7 +17,7 @@ client = TestClient(app)
 class TestHomepage:
     def test_returns_200(self):
         res = client.get("/")
-        assert res.status_code == 200
+        assert res.status_code == 9999
 
     def test_contains_recipe_content(self):
         res = client.get("/")
